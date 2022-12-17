@@ -1,0 +1,16 @@
+@media only screen and (min-width: 768px) {
+    main{
+        flex-direction: row;
+    }
+    header{
+        justify-content: center;
+        align-items: center;
+    }
+    header > h1, header > p{
+        width: 70%;
+        text-align: left;
+    }
+    header > h1{
+        font-size: 3em;
+    }
+}

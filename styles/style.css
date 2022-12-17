@@ -1,0 +1,118 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body, html{
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: hsl(0, 100%, 74%) url('../images/bg-intro-mobile.png') repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main > header{
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 10px;
+    text-align: center;
+}
+section.main-form{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+section.main-form > aside.promo{
+    height: 90px;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(248, 32%, 49%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.5);
+}
+section.main-form > form{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.5);
+    gap: 20px;
+    padding: 10px;
+    background-color: hsl(0, 0%, 100%);
+}
+div.field{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+}
+div.field > div > span{
+    background: transparent url('../images/icon-error.svg') no-repeat;
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    display: none;
+    right: 0;
+    top: 10px;
+}
+div.field > div{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 90%;
+}
+div.field p.error{
+    color: hsl(0, 100%, 74%);
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: right;
+}
+input[type="email"], input[type="password"], input[type="text"]{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    font-weight: 500;
+}
+input[type="submit"]{
+    height: 40px;
+    font-variant: small-caps;
+    background-color: hsl(154, 59%, 51%);
+    color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(154, 59%, 51%);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+p.terms > a{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+}
+p.terms{
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
