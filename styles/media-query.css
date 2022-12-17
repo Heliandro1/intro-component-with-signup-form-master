@@ -1,6 +1,7 @@
 @media only screen and (min-width: 768px) {
     main{
         flex-direction: row;
+        background: hsl(0, 100%, 74%) url('../images/bg-intro-desktop.png') repeat;
     }
     header{
         justify-content: center;
